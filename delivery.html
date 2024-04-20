@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <nav class="navbar vis">
+        <button id="sidebar-toggle" class="sidebar-toggle"><img src="logo-button.png" alt=""></button>
+        <div class="links">
+            <a href="servex.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#" id="rateUs">Rate us</a>
+        </div>
+        <button class="nunu" id="nunu"><i class="bx bx-menu"></i></button>
+    </nav>
+    </div>
+    <div class="sidebar" id="sidebar" class="hidden">
+        <button id="sidebar-toggle" class="sidebar-toggle"><img src="logo-button.png" alt=""></button>    
+        <ul class="sidebar-nav">
+          <li class="sidebar-item active">
+            <i class='bx bx-home-alt-2'></i>
+            <a href="servex.html">Home</a>
+          </li>
+          <li class="sidebar-item">
+            <i class='bx bx-cog  bx-flip-vertical'></i>
+            <a href="#">Services</a>
+          </li>
+          <li class="sidebar-item">
+            <i class='bx bx-phone '></i>
+            <a href="#">Contact</a>
+          </li>
+          <li class="sidebar-item ">
+            <i class='bx bx-star '></i>
+            <a href="#" id="rate">Rate us</a>
+          </li>
+        </ul>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div class="rating-card" id="rateUsCard">
+        <span class="close">&times;</span>
+        <div class="text-wrapper">
+            <p class="text-primary">Please Rate Your Experience</p>
+            <p class="text-primary">With SERVE<span>X</span></p>
+            <p class="text-secondary">to help us serve you better</p>
+        </div>
+        <div class="rating-stars-container">
+            <input value="star-5" name="star" id="star-5" type="radio" />
+            <label for="star-5" class="star-label">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        pathLength="360"></path>
+                </svg>
+            </label>
+            <input value="star-4" name="star" id="star-4" type="radio" />
+            <label for="star-4" class="star-label">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        pathLength="360"></path>
+                </svg>
+            </label>
+            <input value="star-3" name="star" id="star-3" type="radio" />
+            <label for="star-3" class="star-label">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        pathLength="360"></path>
+                </svg>
+            </label>
+            <input value="star-2" name="star" id="star-2" type="radio" />
+            <label for="star-2" class="star-label">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        pathLength="360"></path>
+                </svg>
+            </label>
+            <input value="star-1" name="star" id="star-1" type="radio" />
+            <label for="star-1" class="star-label">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                        pathLength="360"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="socials-container">
+            <a class="social-button" href="#">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z">
+                    </path>
+                </svg>
+            </a>
+            <a class="social-button" href="#">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                </svg>
+            </a>
+            <a class="social-button" href="#">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="text">
+        <h1>Delivery📦🚚</h1>
+        <h4>Embark on a seamless journey of convenience with our delivery service, where speed meets reliability at your doorstep. From piping hot meals to last-minute essentials, we ensure swift and secure deliveries, making life's errands effortless and enjoyable. Choose us for a hassle-free experience that elevates every delivery to a delightful doorstep surprise.
+        </h4>
+    </div>
+    <div class="card-s">
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card_front">
+                <h1>Quick & Accuracy</h1>
+            </div>
+            <div class="card_back">
+                <img src="delivery-quick&accuracy.jpg" alt="Image goes here">
+            </div>
+        </div>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card_front">
+                <h1>Safety & Customization</h1>
+            </div>
+            <div class="card_back">
+                <img src="delivery-safety&customization.jpg" alt="Image goes here">
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="cards" id="services">
+        <div class="card red">
+            <a href="cleaning.html">
+                <p class="tip">🫧Cleaning🫧</p>
+            </a>
+            <p class="second-text">Transforming mess into marvelous</p>
+        </div>
+        <div class="card blue">
+            <a href="cooking.html">
+                <p class="tip">🥘Cooking🥘</p>
+            </a>
+            <p class="second-text">Turning your kitchen chaos into culinary bliss</p>
+        </div>
+        <div class="card green">
+            <a href="organization.html">
+                <p class="tip">✨Organization✨</p>
+            </a>
+            <p class="second-text">Elevate your occasions to unforgettable experience</p>
+        </div>
+        <div class="card pink">
+            <a href="delivery.html">
+                <p class="tip">📦Delivery📦</p>
+            </a>
+            <p class="second-text">From doorstep to delight</p>
+        </div>
+    </div>
+    <div class="space"></div>
+    <footer>
+        <div class="social-with-logo">
+            <img src="logo.png" alt="">
+        </div>
+        <hr>
+        <div class="footer-links">
+            <div class="contact" id="contact">
+                <h2>Contact Us</h2>
+                <hr class="underline">
+                <ul>
+                    <li>Boumerdes, Algeria</li>
+                    <li>+213 558 11 06 01</li>
+                    <li>Servex@gmail.com</li>
+                </ul>
+                <div class="container">
+                    <button><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                            id="Layer_21" height="24" data-name="Layer 21">
+                            <title></title>
+                            <path d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"></path>
+                        </svg></button>
+                    <button><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                            </path>
+                        </svg></button>
+                    <button><svg class="icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.693px"
+                            viewBox="0 0 56.693 56.693" version="1.1" id="Layer_1" height="56.693px">
+                            <path
+                                d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z">
+                            </path>
+                        </svg>
+                    </button>
+                    <span class="title">Contact SERVEX</span>
+                </div>
+            </div>
+            <div class="time">
+                <h2>Opening Time</h2>
+                <hr class="underline">
+                <ul>
+                    <li>Mon - Tue: 8AM - 10PM</li>
+                    <li>Wed: 8AM - 8PM</li>
+                    <li>Fri - Thur: 7AM - 12PM</li>
+                    <li>Sat: 9AM - 12PM</li>
+                    <li>Sun: Closed</li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>SERVEX?</h2>
+                <hr class="underline">
+                <p> Servex is more than a service provider; it's a beacon of hope, support, and compassion in a world
+                    that can sometimes feel overwhelming. </p>
+                <form action="">
+                    <input placeholder="Email Adress" type="email" name="" id="">
+                    <button>Join</button>
+                </form>
+            </div>
+        </div>
+        <p class="footer-message">© 2024 SERVEX. All Rights Reserved</p>
+    </footer>
+    <script src="servex.js"></script>
+</body>
+</html>
